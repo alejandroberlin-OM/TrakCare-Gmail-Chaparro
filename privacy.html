@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Privacy Policy for TrakCare Mac Watchdog.">
+  <title>Privacy Policy — TrakCare Mac Watchdog</title>
+  <style>
+    :root {color-scheme:light; --ink:#182335; --muted:#536178; --accent:#186b74; --line:#e2e8ed; --bg:#f7f9fa}
+    * {box-sizing:border-box} body {margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+    main {max-width:800px; margin:6vh auto; padding:0 24px} .panel {background:#fff; padding:clamp(26px,5vw,54px); border:1px solid var(--line); border-radius:14px}
+    .eyebrow {font-size:12px; text-transform:uppercase; letter-spacing:.12em; font-weight:700; color:var(--accent)}
+    h1 {font-size:clamp(28px,5vw,40px); line-height:1.2; letter-spacing:-.025em; margin:12px 0} h2 {font-size:19px; margin:28px 0 8px} p {margin:0 0 14px}
+    ul {padding-left:24px; margin:8px 0 18px} li {margin:6px 0} a {color:var(--accent); text-underline-offset:3px} .muted,footer {color:var(--muted)} footer {margin:22px 0; font-size:14px}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="panel">
+      <div class="eyebrow">Privacy &amp; data use</div>
+      <h1>Privacy Policy</h1>
+      <p class="muted"><strong>Effective date:</strong> November 11, 2026</p>
+      <p>This policy explains how TrakCare Mac Watchdog (the “Utility”), a privately operated macOS utility, is designed to access and use information from a dedicated Gmail account. The Utility is intended for use only by its authorized operator.</p>
+      <h2>1. Information accessed</h2>
+      <p>With the operator's Google authorization, the Utility requests the Gmail read-only scope (<code>https://www.googleapis.com/auth/gmail.readonly</code>). That permission can allow it to list and read messages in the authorized Gmail account. The intended implementation narrows processing to messages associated with authentication and connection recovery. Gmail read-only access does not authorize modifying, sending, or deleting messages.</p>
+      <h2>2. Purpose and use</h2>
+      <p>The Utility uses Gmail access solely to recognize recently received verification messages relevant to an authorized sign-in workflow and, where configured and permitted, use the relevant code in that authentication flow. It may use message sender, subject, timestamp and body to distinguish a current code from an older one. This use is limited to the operator's own authorized access.</p>
+      <h2>3. Storage and retention</h2>
+      <p>The Utility is designed to run locally on the operator's Mac. OAuth authorization files are stored in a restricted local directory and should be protected using macOS file permissions and device security. Verification codes should be processed transiently and should not be written into diagnostic logs or retained after their immediate use. The operator can revoke Google's authorization and delete local OAuth files.</p>
+      <h2>4. Sharing and transfers</h2>
+      <p>The public website does not receive Gmail data. The Utility is not intended to sell Gmail data, use it for advertising, or transmit mailbox contents to an external analytics service. When a code is used for an authorized sign-in, that code is supplied to the relevant authentication service as part of the requested login. Gmail API requests are processed by Google as necessary to provide the API.</p>
+      <h2>5. Security</h2>
+      <p>Safeguards are intended to include Google OAuth authorization, least-privilege API scopes, restricted local credentials, limited authentication retries, and logs that exclude message bodies and verification codes. The security of the Mac, Google account, forwarding device and healthcare-system account remains important.</p>
+      <h2>6. Google API Services User Data Policy</h2>
+      <p>The intended use and transfer of information received from Google APIs is limited to providing the functionality described above and is subject to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements where applicable.</p>
+      <h2>7. User control and deletion</h2>
+      <p>The account holder can revoke the Utility's Google access in their <a href="https://myaccount.google.com/connections">Google Account connections</a>. Local token and credential files can then be deleted from the Mac. Messages already present in Gmail remain under the account holder's control through Gmail.</p>
+      <h2>8. Changes and contact</h2>
+      <p>This policy may be updated if the Utility's actual functionality or data practices change. For questions, privacy inquiries, or requests about local data, contact <a href="mailto:secretaria.dr.chaparro@gmail.com">secretaria.dr.chaparro@gmail.com</a>.</p>
+      <p class="muted"><small>This is an independent utility, not an official product of any hospital or the third-party services used for authentication or connectivity.</small></p>
+      <p><a href="index.html">Return to Home</a></p>
+    </div>
+    <footer>© 2026 TrakCare Mac Watchdog · <a href="index.html">Home</a></footer>
+  </main>
+</body>
+</html>
